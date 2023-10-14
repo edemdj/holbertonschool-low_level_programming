@@ -1,0 +1,4 @@
+#!/bin/bash
+gcc -E -o c
+case e in
+    
