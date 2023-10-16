@@ -1,2 +1,2 @@
 #!/bin/bash
-prinf "Programming is like building a multilingual puzzle
+gcc prinf "Programming is like building a multilingual puzzle
