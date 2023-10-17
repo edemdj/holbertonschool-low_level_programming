@@ -2,12 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 /**
- *main - Prints a random number and states whether
+ * main - Prints a random number and states whether
  *        it is positive, negative, or zero.
  *
- *Description : 'conditions printf if'
- *
- *return : always 0 (succes)
+ * Return: always 0 (succes)
  */
 int main(void)
 {
