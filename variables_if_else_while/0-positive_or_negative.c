@@ -1,10 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* conditions , if , else */
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ *
+ *Description : 'conditions printf if'
+ *
+ *return : always 0 (succes)
+ */
 int main(void)
 {
 	int n;
@@ -13,16 +16,16 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-	printf("is positive");
+	printf("%d is positive\n", n);
 	}
 
-	if (n < 0)
+	else if (n < 0)
 	{
-		printf("is negative");
+		printf("%d is negative\n", n);
 	}
 	else
 	{
-		printf("is zero");
+		printf("%d is zero\n", n);
 	}
 	return (0);
 }
