@@ -12,10 +12,10 @@ int main(void)
 	char letter;
 
 	for (numbers = 0; numbers < 10; numbers++)
-		putchar;(numbers);
+		putchar(numbers);
 
 	for (letter = 'a'; letter <= 'f'; letter++)
-		putchar;(letter)
+		putchar(letter);
 
 	putchar ('\n');
 
