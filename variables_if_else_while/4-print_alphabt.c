@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main alphabet in lowercase exepted q and e
+ * main - print alphabet in lowercase exepted q and e
  *
  *Return: Always 0 (success)
  */
