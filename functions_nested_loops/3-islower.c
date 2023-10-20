@@ -1,10 +1,13 @@
 #include "main.h"
-#include <stdio.h>
 /**
  *  int _islower(int c) - , function that checks for lowercase character.
  *
  * Always return (0);
  */
-void print_alphabet_x10(void)
+int _islower(int c)
 {
-	
+	if (c >=97 && c <= 122)
+		return(1);
+
+	else return(0);
+}
