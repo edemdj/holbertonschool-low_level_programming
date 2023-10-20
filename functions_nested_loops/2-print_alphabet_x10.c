@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * print_alphabet - void print_alphabet_x10, in lowercase, followed by a new line
+ * print_alphabet_x10 - void print_alphabet_x10, in lowercase, followed by a new line
  *
  * Always return (0);
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	int letter;
 
