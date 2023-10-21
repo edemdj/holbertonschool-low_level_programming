@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * imes_table - function that prints the 9 times table, starting with 0.
+ * times_table - function that prints the 9 times table, starting with 0.
  *@i;@j: number
  * Return void
  */
