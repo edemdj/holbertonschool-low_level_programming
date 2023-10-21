@@ -5,7 +5,7 @@
  *@i;@j: number
  * Return: Always return 0
  */
-void jack_bauer(void)
+int jack_bauer(int i)
 {
 	int i, j;
 
