@@ -2,7 +2,7 @@
 /**
  * _strlen - unction that returns the length of a string.
  *@s: char type pointeur
- * Return string
+ * Return: string
  */
 int _strlen(char *s)
 {
