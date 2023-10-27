@@ -1,19 +1,15 @@
 #include "main.h"
 
 /**
- * print_numbers - prints numbers from 0 to 9
- * void: No Input Parameter
- *@n:number
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * print_numbers - Prints the numbers from 0-9.
  */
 void print_numbers(void)
 {
-	int i;
+	int c;
 
-	for (i = 48; i < 58; i++)
+	for (c = 48; c < 58; c++)
 	{
-		_putchar(i);
+		_putchar(c);
 	}
 	_putchar('\n');
 }
