@@ -1,4 +1,4 @@
-/*
+/**
  * File: 4-strpbrk.c
  * Auth:sam tech(samuel birhanu)
  */
