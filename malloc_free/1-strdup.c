@@ -4,8 +4,8 @@
  * _strdup - function that returns a pointer to a newly allocated
  * space in memory,
  *@str:imput string
- * Retur: NULL if str == NULL, or if insufficient memory
- * else On success, the _strdup function returns new
+ * Return: if str = NULL or if insufficient memory was available return NULL
+ * otherwise return new
  */
 char *_strdup(char *str)
 {
