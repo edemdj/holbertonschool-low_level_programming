@@ -3,7 +3,7 @@
 /**
  * _strdup - function that returns a pointer to a newly allocated
  * space in memory,
- *@str:imput string
+ * @str:imput string
  * Return: if str = NULL or if insufficient memory was available return NULL
  * otherwise return new
  */

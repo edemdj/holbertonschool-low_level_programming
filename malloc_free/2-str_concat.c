@@ -32,16 +32,13 @@ char *str_concat(char *s1, char *s2)
 
 	if (concat_str == NULL)
 	{
-		free(concat_str);
 		return (NULL);
 	}
 
 	for (k = 0; k < i; k++)
 		concat_str[k] = s1[k];
 
-	len = j
-		;
-
+	len = j;
 	for (j = 0; j <= len; k++, j++)
 
 		concat_str[k] = s2[j];
