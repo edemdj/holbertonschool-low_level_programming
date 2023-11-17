@@ -1,0 +1,23 @@
+#include "3-calc.h"
+/**
+ * op_add - returns the sum of 2 integers
+ *@a: first integer
+ *@b: second integer
+ * Return: sum
+ */
+int op_add(int a, int b)
+{
+	return (a + b);
+}
+
+/**
+ * op_sub - returns the difference of 2 integers
+ *@a: first intege
+ *@b: second integer
+ * Return: difference between soustraction
+ */
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
+
