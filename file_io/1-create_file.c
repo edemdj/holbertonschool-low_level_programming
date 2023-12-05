@@ -5,29 +5,29 @@
  *@text_content:
  * Return:
  */
-int create_file(const char *filename, char *text_content);
+int create_file(const char *filename, char *text_content)
 {
-	char *buf;
 	unsigned int len = 0;
-	int r, w, fd;
+	int w, fd;
 
-	if (filname == NULL)
+	if (filename == NULL)
 		return (-1);
 
 	if (text_content != NULL)
 	{
-		for (; texte content[len]
+		for (; text_content[len]
 			     ; len++);
 	}
 
-	buf = malloc(sizeof(char) * len);
-	if (buf == NULL)
-		return (0);
-	
-	o = open(filename, O_RDONLY);
-        r = read(o, buffer, letters);
-        w = write(STDOUT_FILENO, buffer, r);
-        if (o == -1 || r == -1 || w == -1 || w != r)
-                return (0);
+	fd = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+	w = write(STDOUT_FILENO, text_content, fd);
 
+	if (fd == -1 || w == -1)
+	{
+		return (-1);
+	}
+
+	close(fd);
+
+	return (1);
 }
