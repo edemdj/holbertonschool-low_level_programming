@@ -5,7 +5,7 @@
  * standard output.
  * @filename:name of file to read
  * @letters:number of letters it should read and print
- * Returns: if fails return 0 otherwise reurn  number of letters it could
+ * Returns: if success return number of letter, else return 0
  * read and print
  */
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -16,9 +16,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filename == NULL)
 		return (0);
 
-	buffer = malloc(sizeof(char) * letters);
+	buffer = malloc(sizeof(char) * letters + 1);
 	if (buffer == NULL)
 		return (0);
+
 
 	o = open(filename, O_RDONLY);
 	r = read(o, buffer, letters);
@@ -26,6 +27,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (o == -1 || r == -1 || w == -1 || w != r)
 		return (0);
+
+	free(buffer);
 
 	return (w);
 }
