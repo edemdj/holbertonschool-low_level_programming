@@ -27,6 +27,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (o == -1 || r == -1 || w == -1 || w != r)
 		return (0);
+	
+	close(o);
 
 	free(buffer);
 
