@@ -5,7 +5,7 @@
  *@text_content:
  * Return:
  */
-int create_file(const char *filename, char *text_content);
+int create_file(const char *filename, char *text_content)
 {
 	char *buf;
 	unsigned int len = 0;
@@ -23,6 +23,8 @@ int create_file(const char *filename, char *text_content);
 	buf = malloc(sizeof(char) * len);
 	if (buf == NULL)
 		return (0);
+
+	free (buf);
 	
 	o = open(filename, O_RDONLY);
         r = read(o, buffer, letters);
@@ -30,4 +32,5 @@ int create_file(const char *filename, char *text_content);
         if (o == -1 || r == -1 || w == -1 || w != r)
                 return (0);
 
+close (filename);
 }
