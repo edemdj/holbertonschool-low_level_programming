@@ -1,32 +1,26 @@
-/**
- * File: 4-strpbrk.c
- * Auth:sam tech(samuel birhanu)
- */
-
 #include "main.h"
-
+#include <stdio.h>
 /**
- * _strpbrk - Searches a string for any of a set of bytes.
- * @s: The string to be searched.
- * @accept: The set of bytes to be searched for.
+ * _strpbrk - finds string
+ * @s: string to find stuff
+ * @accept: accepting arrays
  *
- * Return: If a set is matched - a pointer to the matched byte.
- *         If no set is matched - NULL.
+ * Return: returns new value
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int index;
+	int i;
+	int j;
 
-	while (*s)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (index = 0; accept[index]; index++)
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (*s == accept[index])
-				return (s);
+			if (s[i] == accept[j])
+			{
+				return (s + i);
+			}
 		}
-
-		s++;
 	}
-
-	return ('\0');
+	return (0);
 }
